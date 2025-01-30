@@ -23,4 +23,17 @@ fun main() {
     libreria.borrarLibroAutor("J. K. Rowling")
 
     libreria.mostrarDetallesLibros()
+
+    println("-- Eliminando TODOS los libros...\n")
+    libreria.borrarLibroAutor("Gabriel García Márquez")
+    libreria.borrarLibroAutor("George Orwell")
+    libreria.borrarLibroAutor("Antoine de Saint-Exupéry")
+    libreria.borrarLibroAutor("J. R. R. Tolkien")
+
+    libreria.mostrarDetallesLibros()
+
+    println("-- Añadiendo 'La historia de tu vida'...\n")
+    libreria.aniadirLibro(Libro("La historia de tu vida", "Ted Chiang", 336, 9.5))
+
+    libreria.mostrarDetallesLibros()
 }
